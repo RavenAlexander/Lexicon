@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Lexicon</title>
+  <link rel="icon" type="image/png" href="assets/images/logo.png" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/style/style.css">
+  <script src="https://www.gstatic.com/firebasejs/5.4.2/firebase.js"></script>
+
+</head>
+
+<body>
+  <!--Navbar-->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+      <img src="assets/images/logo.png" width="70px" height="40px">    <!-- dim 7/4 -->
+  </nav>
+
+  <!--Jumbotron-->
+  <div class="jumbotron">
+
+    <div class="row">
+      <div class="col-md-4">
+        <p class="lead">Welcome to Lexicon global chat room,
+          the app that allows you to chat with friends of
+          any language across the world!
+          <br>
+          <br>
+          Sign up with a username to enjoy the translation
+          and friend finder features of lexicon.
+        </p>
+        <br>
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+          Get Started!
+        </button>
+
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <!--Sign Up Modal-->
+
+
+  <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" id="myModal">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Set a name and pick a language!</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <form id="SignUp">
+          <div class="form-group">
+            <label for="exampleFormControlInput1">Username</label>
+            <input type="text" class="form-control" id="username" placeholder="name">
+            <div class="form-group">
+              <label for="exampleFormControlSelect1">Select Your Language:</label>
+              <select class="form-control" id="languageList">
+              </select>
+            </div>
+            <br>
+
+            <div class="modal-footer">
+                <button id="create-profile" type="button" class="btn btn-default" data-dismiss="modal">Start chat!</button>
+              </div>
+
+        </form>
+
+
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <!--Chatroom and Side panel-->
+  <!-- <div class="container" id="selectLanguageBox"> -->
+
+  <div class="container" id="chatSTUFF">
+    <div class="row">
+      <script></script>
+      <div class="col-md" id="chatHeader">
+        <h2>Global Chat:</h2>
+
+        <div class="row">
+          <div class="col" id="chatExplainer">
+            The responses below are all translated into your native language. Type your response below to join the
+            global conversation!
+          </div>
+        </div>
+      </div>
+    </div>
+    <br>
+
+    <div class="row">
+      <div class="col-md-12" id="chatroom">
+        <div id="wrapper">
+          <div id="menu">
+            <p class="welcome">Welcome, <b></b></p>
+            <p class="logout"><a id="exit" href="#">Exit Chat</a></p>
+            <div style="clear:both"></div>
+          </div>
+
+          <div>
+            <p id="chatbox"></p>
+          </div>
+
+          <form name="message" action="" id="msg">
+            <div class="row" id="textSTUFF">
+              <div class="btn-group dropup">
+                <div class="input-group">
+                    <input type="text" class="form-control" name="usermsg" type="text" id="usermsg" size="63">
+                    <span class="input-group-append">
+                      <button class="btn btn-default" type="button" name="submitmsg" type="submit" id="submitmsg">TEXT</button>
+                      <button class="btn btn-default" type="button" id="gifButtonsView">GIF</button>
+                    </span>
+                </div><!-- /input-group -->
+              </div>
+            </div><!-- /.row -->
+            <!-- <input name="usermsg" type="text" id="usermsg" size="63" /> -->
+            <!-- <input name="submitmsg" type="submit" id="submitmsg" value="Send" /> -->
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="test">
+
+  </div>
+
+
+
+  <!--Footer-->
+
+  <div class="card">
+    <div class="card-body">
+      <footer> &copy; Team
+        < s t r o n g />
+      </footer>
+    </div>
+  </div>
+
+
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.4.2/firebase.js"></script>
+  <script src="assets/logic/logic.js"></script>
+  <script src="assets/logic/languagesStore.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,270 @@
+h2 {
+    float: left;
+}
+
+footer {
+    text-align: center;
+    color: slategray;
+}
+
+.jumbotron {
+    color: white;
+    background-color: #2e3191;
+}
+
+.btn-primary {
+    color: white;
+    background-color: #409661;
+}
+
+#chatroom {
+    height: 500px;
+    border: 1px solid #ccc;
+    font: 16px/26px;
+    overflow: auto;
+    background-color: #efefef;
+    padding: 10px;
+    margin-bottom: 2rem;
+}
+
+#logIn {
+    float: right;
+    text-align: right;
+    margin: 0 0 0 700px;
+    padding: 0 0 0 0;
+}
+
+#chatHeader {
+    background-color: #1b9dd0;
+    position: 0px 0px 0px 15px;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* chatbox css */
+form,
+p,
+span {
+    margin: 0;
+    padding: 0;
+}
+
+input {
+    font: 12px arial;
+}
+
+a {
+    color: #0000FF;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+#textSTUFF {
+    width: 95%;
+    border: 1px solid #ACD8F0;
+}
+
+#submit {
+    width: 60px;
+}
+
+#menu {
+    padding: 12.5px 25px 12.5px 25px;
+}
+
+.welcome {
+    float: left;
+}
+
+.logout {
+    float: right;
+}
+
+/* end chatbox css */
+
+#profileInfo {
+    margin: 10px;
+    padding: 10px;
+    background: #1b9dd0;
+    text-align: center;
+    color: white;
+}
+
+#profileInfo.img {
+    align-content: center;
+}
+
+#profileDetails {
+    margin: 10px;
+    padding: 20px;
+    background-color: #efefef;
+    border: 1px solid #ccc;
+}
+
+#profilePhoto {
+    border-radius: 10px;
+}
+
+#usersChattedWith {
+    margin: 10px;
+    padding: 10px;
+    background-color: #efefef;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+#userBox {
+    background-color: #efefef;
+    border-bottom-color: white;
+    color: white;
+    height: 100px;
+    left: 15px;
+    width: 100%
+}
+
+#userHeader {
+    background-color: #1b9dd0;
+    color: white;
+    left: 15px;
+    padding: 20px;
+    text-align: center;
+    width: 85%
+}
+
+#wrapper,
+#loginform {
+    margin: 0 auto;
+    padding-bottom: 25px;
+    background: #EBF4FB;
+    width: 95%;
+    border: 1px solid #ACD8F0;
+}
+
+#loginform {
+    padding-top: 18px;
+}
+
+#loginform p {
+    margin: 5px;
+}
+
+#chatbox {
+    text-align: left;
+    margin: 0 auto;
+    margin-bottom: 25px;
+    padding: 10px;
+    background: #fff;
+    height: 270px;
+    width: 85%;
+    border: 1px solid #ACD8F0;
+    word-wrap: break-word;
+    overflow: auto;
+}
+
+.error {
+    color: #ff0000;
+}
+
+.msgln {
+    margin: 0 0 2px 0;
+}
+
+#chatExplainer {
+    text-align: left;
+}
+
+#userExplainer {
+    text-align: left;
+}
+
+.modal-header {
+    background-color: #1b9dd0;
+    color: white;
+}
+
+#SignUp {
+    padding: 30px;
+}
+
+.modal-content {
+    padding: 0px 0px 50px 0px
+}
+
+.form-group btn {
+    align: right;
+}
+
+#selectLanguageBox {
+    background-color: #efefef;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+#text2TranslateInChat {
+    color: white;
+    background-color: #409661;
+    margin: 20px;
+}
+
+#yourFriends {
+    margin: 10px;
+    padding: 10px;
+    background-color: #efefef;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+h5 {
+    background: #ACD8F0;
+    text-align: center;
+    border-radius: 10px;
+}
+
+#msg {
+    padding: 0 0 0 0;
+    margin-left: 65px;
+    width: 90%;
+}
+.card-body {
+    padding: 0;
+}
+
+div,
+.jumbotron {
+    border-radius: 10px;
+}
+
+#chatUsers {
+    margin: 0 -30px 0 0;
+    padding: 0 0 0 0;
+}
+
+h4 {
+    color: white;
+}
+
+/* .dropdown-content{
+display: none;
+position: absolute;
+background-color: #f1f1f1;
+min-width: 160px;
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+z-index: 1;
+}
+.dropdown-content p:hover {background-color: #ddd;}
+
+.dropdown-thing:hover .dropdown-content {display: block;}
+
+.dropdown-thing:hover .dropbtn {background-color: #3e8e41;} */
+@media only screen and (max-width: 766px) {
+    /* do stuff */
+    #msg {
+        padding: 0 0 0 0;
+        margin-left: 38px;
+        width: 90%;
+    }
+}
